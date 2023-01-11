@@ -1,10 +1,8 @@
 /* Main.cpp
 *  Carter R McCall
-*  6 January 2023
+*  6 Janruary 2023
 *  Purpose:
 *		Check if a string is a palindrome or not
-*	Modified 10 January 2023:
-*		Moved check and reduce functions to separate .cpp files
 */
 
 #include "Main.h"
