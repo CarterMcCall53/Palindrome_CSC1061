@@ -16,8 +16,7 @@ string Reduce::reduce(string input) {
 						'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '0', '1', '2', '3', '4', '5', '6',
 						'7', '8', '9' };
 
-	//algorithm to remove all characters except letters and numbers
-	for (int i = 0; i < input.length(); i++) {
+	for (int i = 0; i < input.length(); i++) { //algorithm to remove all characters except letters and numbers
 		for (int j = 0; j < 36; j++) {
 			if (input[i] == validCharacters[j]) {
 				break;
