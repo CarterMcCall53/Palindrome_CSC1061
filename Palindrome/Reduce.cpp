@@ -18,14 +18,15 @@ string Reduce::reduce(string input) {
 	
 	int inputL = input.length();
 
+	//algorithm to remove all characters except letters and numbers
 	for (int i = 0; i < inputL; i++) {
 		for (int j = 0; j < 36; j++) {
 			if (input[i] == validCharacters[j]) {
 				break;
 			}
 			else if (input[i] != validCharacters[j] && j == 35) {
-				input.erase(i, i);
-				inputL =- 1;
+				input.erase(i, 1);
+				inputL -= 1;
 				break;
 			}
 		}
