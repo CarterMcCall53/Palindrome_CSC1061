@@ -18,6 +18,8 @@ int main() {
 		cout << "Please Enter a Sentence or Phrase: "; //gets palindrome from user
 		getline(cin, input);
 
+		input = Reduce::reduce(input);
+
 		if (Check::check(input) == true) cout << input << " is a palindrome!" << endl; //prints if it is or is not a palindrome
 		else cout << input << " is not a palindrome!" << endl;
 		do { //repeat function

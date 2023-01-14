@@ -15,18 +15,16 @@ string Reduce::reduce(string input) {
 	char validCharacters[36] = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p',
 						'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '0', '1', '2', '3', '4', '5', '6',
 						'7', '8', '9' };
-	
-	int inputL = input.length();
 
 	//algorithm to remove all characters except letters and numbers
-	for (int i = 0; i < inputL; i++) {
+	for (int i = 0; i < input.length(); i++) {
 		for (int j = 0; j < 36; j++) {
 			if (input[i] == validCharacters[j]) {
 				break;
 			}
 			else if (input[i] != validCharacters[j] && j == 35) {
 				input.erase(i, 1);
-				inputL -= 1;
+				i--;
 				break;
 			}
 		}

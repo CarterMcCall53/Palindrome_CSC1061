@@ -12,13 +12,6 @@ bool Check::check(string palindrome) {
 	bool even = true;
 	char character;
 
-	palindrome = Reduce::reduce(palindrome);
-
-	for (int i = 0; i < 5; i++)
-	{
-		cout << palindrome << endl;
-	}
-
 	if (palindrome.length() % 2 == 0) even = true; //checks if palindrome is odd or even
 	else even = false;
 
